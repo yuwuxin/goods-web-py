@@ -22,6 +22,8 @@ Including another URLconf
 
 from django.conf.urls import url
 from . import view
+from django.conf import settings
+from django.views.static import serve
 
 urlpatterns = [
     url(r'^$', view.index),
